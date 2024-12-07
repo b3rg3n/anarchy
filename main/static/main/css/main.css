@@ -1,0 +1,114 @@
+body {
+    margin: 40px;
+    display: flex;
+    position: fixed;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.modal-content {
+    background-color: #fff;
+    /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
+    margin: 100px auto;
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+    /* разнесем текст и кнопоку по краям окна */
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    cursor: pointer;
+}
+
+.header {
+    z-index: 3;
+    font-size: 26px;
+    color: white;
+    text-align: right;
+    display: flex;
+    position: fixed;
+}
+
+.btn-header {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(192, 192, 192, 1);
+    transition: 0.5s;
+}
+
+.btn-header:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+
+.btn-new {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(192, 192, 192, 1);
+    transition: 0.5s;
+}
+
+.btn-new:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+
+.container {
+    position: fixed;
+    z-index: 1;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(5px);
+    background-image: url("https://i.ibb.co/30JDzNd/fon.webp");
+    background-size: cover;
+}
+
+.content {
+    margin-top: 160px;
+    margin-left: 160px;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.oski {
+    margin-top: 270px;
+    margin-left: 540px;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.cartamoda {
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: 20px;
+    margin-top: 160px;
+    color: white;
+    background: #696969;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    text-align: center;
+}

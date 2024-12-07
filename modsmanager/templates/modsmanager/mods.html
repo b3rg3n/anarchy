@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block pagename %}
+    Наши моды
+{% endblock %}
+
+{% block stuff %}
+    {% for el in mods %}
+            <div class="cartamoda">
+                <h3>{{ el.name }}</h3>
+                <p>{{ el.size }} MB</p>
+                <img src='{{ el.photo }}' width="200">
+                <button class="btn-header" type="button" onclick="window.location.replace('{{ el.link }}')">Скачать</button>
+            </div>
+        {% endfor %}
+{% endblock %}

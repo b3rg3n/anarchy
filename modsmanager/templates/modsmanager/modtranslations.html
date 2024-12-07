@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block pagename %}
+    Переводы
+{% endblock %}
+
+{% block stuff %}
+    {% for gay in tsblevota %}
+            <div class="cartamoda">
+                <h3>{{ gay.name }}</h3>
+                <p>{{ gay.size }} MB</p>
+                <img src='{{ gay.photo }}' width="200">
+                <button class="btn-header" type="button" onclick="window.location.replace('{{ gay.link }}')">Скачать</button>
+            </div>
+        {% endfor %}
+{% endblock %}

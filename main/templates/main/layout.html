@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Переводы модификаций к DDLC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>{% block pagename %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static '/main/css/main.css' %}">
+    <script src="{% static '/main/js/main.js' %}"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/js/vex.combined.min.js" integrity="sha512-9ZP47jSudEgrUZA1Z3VOWIJFxHCfkJlarrrQxVdPH/vVtoAwD84AS8lmiv0hizWQvFkwAUnYZA/nehKRP5EFUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-default'</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex-theme-default.min.css" integrity="sha512-DR1rAGpnA4hKCYcnKwgANJLco6nw5VjZPFGx1Li7vjyxSDq0Bh7neUIxMc+LdAb7zUjrA0bZ9ZX/9wesaKl/QQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex.min.css" integrity="sha512-bSrj+eCIsXO9dQmu+zpSJolzqW9IaxugS6Z16062CYd5t9d/Mg3Uys9KkYvbLOV1VlkHaIkmx+b9jWi3YI0FXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+<div class="container"></div>
+
+<div class="header">
+
+    <button class="btn-header" type="button" onclick="window.location.replace('{% url 'index' %}')">На главную</button>
+    <button class="btn-header" type="button" onclick="window.location.replace('{% url 'modtranslations' %}')">Переводы</button>
+    <button class="btn-header" type="button" onclick="window.location.replace('{% url 'modsmanager_home' %}')">Наши моды</button>
+    <button class="btn-header" type="button" onclick="window.location.replace('{% url 'contacts' %}')">Контакты</button>
+
+</div>
+    {% block stuff %}
+    {% endblock %}
+</body>
+
+</html>
